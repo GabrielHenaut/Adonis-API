@@ -18,7 +18,8 @@
     "pino-pretty": "^10.0.0",
     "typescript": "~4.6",
     "youch": "^3.2.3",
-    "youch-terminal": "^2.2.0"
+    "youch-terminal": "^2.2.0",
+	"ace": "^5.9.0"
   },
   "dependencies": {
     "@adonisjs/auth": "^8.2.3",
