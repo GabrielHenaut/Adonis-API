@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "52d00d3f-baa4-41b6-ae0e-e8ddb37caae8",
+		"name": "Sesa-challenge",
+		"description": "# Working with preset requests\n\nIn this workspace, you’ll find a [collection](https://learning.postman.com/docs/collections/collections-overview) with preset requests for a basic CRUD operation. Each request contains a base URL [variable](https://learning.postman.com/docs/sending-requests/variables) with your base URL filled in.\n\n**Follow these steps to customize your requests:**\n\n**Step 1:** Build each request by updating its path.\n\nAdd the request’s path after the `base_url` variable.\n\nYou can also add query parameters, body, and other required details.\n\n<img src=\"https://skills-assets.pstmn.io/growth-experiments/GRW-358/URL.gif\" alt=\"\">\n\n**Step 2:** Send the request and save it. Don’t forget to update the request names.\n\n**Step 3:** Feel free to delete the requests that you don’t need.\n\n\n# Working with preset environments\n\nIn this workspace, you’ll find preset [environments](https://learning.postman.com/docs/sending-requests/managing-environments) for local, staging, and production. Each environment contains variables for your base URL and authorization (auth) token.\n\n**Follow these steps to customize your environments:**\n\n**Step 1:** Update the variables in each environment and save them. Feel free to add or remove variables.\n\n**Step 2:** Activate the environment to begin testing in it.\n\n<img src=\"https://skills-assets.pstmn.io/growth-experiments/GRW-358/Environments.gif\" alt=\"\">",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27918464"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Insert Product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer MQ.4TTMN3FWv7gnnc4sToxErkesq_XFqFHmkaHz4HJa5H4zCE_SnDJwyumN91kC",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\":\"pen4\",\r\n    \"product_price\": 120.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/produts",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"produts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer MQ.4TTMN3FWv7gnnc4sToxErkesq_XFqFHmkaHz4HJa5H4zCE_SnDJwyumN91kC",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\":\"pen4\",\r\n    \"product_price\": 120.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/produts",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"produts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer MQ.4TTMN3FWv7gnnc4sToxErkesq_XFqFHmkaHz4HJa5H4zCE_SnDJwyumN91kC",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\":\"pen4\",\r\n    \"product_price\": 120.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/produts/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"produts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer MQ.4TTMN3FWv7gnnc4sToxErkesq_XFqFHmkaHz4HJa5H4zCE_SnDJwyumN91kC",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\":\"pen4\",\r\n    \"product_price\": 120.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/produts/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"produts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer MQ.4TTMN3FWv7gnnc4sToxErkesq_XFqFHmkaHz4HJa5H4zCE_SnDJwyumN91kC",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\":\"pen4\",\r\n    \"product_price\": 150.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/produts/4",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"produts",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel\",\r\n    \"email\": \"gabriel2@email.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/register",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Mg.xWptnylAYcxOi2BQI5prAKedUQVJSJv6Ne3T7htzG2j3fMNiNb_YD8_iDh7J",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel\",\r\n    \"email\": \"gabriel1@email.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Mg.xWptnylAYcxOi2BQI5prAKedUQVJSJv6Ne3T7htzG2j3fMNiNb_YD8_iDh7J",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel\",\r\n    \"email\": \"gabriel1@email.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Mg.xWptnylAYcxOi2BQI5prAKedUQVJSJv6Ne3T7htzG2j3fMNiNb_YD8_iDh7J",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel\",\r\n    \"email\": \"gabriel1@email.com\",\r\n    \"password\": \"123\",\r\n    \"password_confirmation\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Mg.xWptnylAYcxOi2BQI5prAKedUQVJSJv6Ne3T7htzG2j3fMNiNb_YD8_iDh7J",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gabriel\",\r\n    \"email\": \"gabriel6@email.com\",\r\n    \"password\": \"1236\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"gabriel2@email.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/login",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://127.0.0.1:3333/api",
+			"type": "string"
+		}
+	]
+}
